@@ -1,0 +1,18 @@
+[
+  {
+    "spec": "Score each cat photo individually on Compositional Deliberation. Evaluate whether the photographer has made intentional, thoughtful choices about framing, angle, and subject positioning. Consider whether the placement and frame boundary suggest deliberate artistic decisions (rule of thirds, leading lines, perspective choices) versus accidental arrangement. Assign a score reflecting the degree of compositional intentionality evident in each photo.",
+    "token": "ffafd7ce-8b86-4844-a595-5847b2a602d3"
+  },
+  {
+    "spec": "Rank all cat photos comparatively on Visual Balance and Coherence. Evaluate the overall harmony and unity of each photograph. Assess whether colors, textures, tones, and spatial elements work together in a balanced, cohesive way. Determine if there is a visual rhythm and logic that guides the viewer's eye, or if elements feel scattered and competing. Photos with high visual harmony should rank higher than those with visual discord or chaotic composition.",
+    "token": "eeace37b-a367-40a2-9757-7383d5937b84"
+  },
+  {
+    "spec": "Rank all cat photos comparatively on Subject Prominence and Narrative Clarity. Evaluate how effectively the cat functions as the primary focal point and narrative anchor of each photograph. Assess whether the cat's position and framing naturally draw the eye first, and whether the composition conveys something meaningful about the cat's character, mood, or relationship to its environment. Photos where the cat is clearly the subject of intent should rank higher than those where the cat is lost or ambiguous.",
+    "token": "17aca2da-c11b-4986-8c37-7fa3a3b7f052"
+  },
+  {
+    "spec": "Rank all cat photos comparatively on Contextual Supportiveness. Evaluate how well the background, environment, and surrounding elements complement and enhance each cat as the primary subject. Assess whether contextual elements provide meaningful visual or informational support through color contrast, tonal balance, or compositional logic, or whether they distract and compete for visual attention. Photos where the context harmonizes with the subject should rank higher than those with distracting or conflicting backgrounds.",
+    "token": "f1a31543-391b-4003-8380-d82931aaa17e"
+  }
+]

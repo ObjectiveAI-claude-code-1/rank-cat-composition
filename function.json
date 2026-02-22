@@ -1,0 +1,213 @@
+{
+  "type": "vector.function",
+  "input_schema": {
+    "type": "array",
+    "description": "An array of cat photos to be ranked",
+    "minItems": 2,
+    "maxItems": 100,
+    "items": {
+      "type": "object",
+      "description": "A cat photo with its URL and optional metadata",
+      "properties": {
+        "url": {
+          "type": "string",
+          "description": "The URL or file path to the cat photo image"
+        },
+        "title": {
+          "type": "string",
+          "description": "An optional title or label for the photo"
+        },
+        "photographer": {
+          "type": "string",
+          "description": "An optional credit to the photographer"
+        }
+      },
+      "required": [
+        "url"
+      ]
+    }
+  },
+  "output_length": {
+    "$starlark": "len(input)"
+  },
+  "input_split": {
+    "$starlark": "[[photo] for photo in input]"
+  },
+  "input_merge": {
+    "$starlark": "[photo for subarray in input for photo in subarray]"
+  },
+  "tasks": [
+    {
+      "type": "placeholder.scalar.function",
+      "input_schema": {
+        "type": "object",
+        "description": "A cat photo",
+        "properties": {
+          "url": {
+            "type": "string",
+            "description": "The URL or file path to the cat photo image"
+          },
+          "title": {
+            "type": "string",
+            "description": "An optional title or label for the photo"
+          },
+          "photographer": {
+            "type": "string",
+            "description": "An optional credit to the photographer"
+          }
+        },
+        "required": [
+          "url"
+        ]
+      },
+      "map": 0,
+      "input": {
+        "$starlark": "map"
+      },
+      "output": {
+        "$starlark": "normalized = [score / 100.0 for score in output]\nsum_scores = sum(normalized)\n[score / sum_scores for score in normalized] if sum_scores > 0 else [1.0 / len(normalized)] * len(normalized)"
+      }
+    },
+    {
+      "type": "placeholder.vector.function",
+      "input_schema": {
+        "type": "array",
+        "description": "An array of cat photos to be ranked",
+        "minItems": 2,
+        "maxItems": 100,
+        "items": {
+          "type": "object",
+          "description": "A cat photo with its URL and optional metadata",
+          "properties": {
+            "url": {
+              "type": "string",
+              "description": "The URL or file path to the cat photo image"
+            },
+            "title": {
+              "type": "string",
+              "description": "An optional title or label for the photo"
+            },
+            "photographer": {
+              "type": "string",
+              "description": "An optional credit to the photographer"
+            }
+          },
+          "required": [
+            "url"
+          ]
+        }
+      },
+      "output_length": {
+        "$starlark": "len(input)"
+      },
+      "input_split": {
+        "$starlark": "[[photo] for photo in input]"
+      },
+      "input_merge": {
+        "$starlark": "[photo_array[0] for photo_array in input]"
+      },
+      "input": {
+        "$starlark": "input"
+      },
+      "output": {
+        "$starlark": "output"
+      }
+    },
+    {
+      "type": "placeholder.vector.function",
+      "input_schema": {
+        "type": "array",
+        "description": "An array of cat photos to be ranked",
+        "minItems": 2,
+        "maxItems": 100,
+        "items": {
+          "type": "object",
+          "description": "A cat photo with its URL and optional metadata",
+          "properties": {
+            "url": {
+              "type": "string",
+              "description": "The URL or file path to the cat photo image"
+            },
+            "title": {
+              "type": "string",
+              "description": "An optional title or label for the photo"
+            },
+            "photographer": {
+              "type": "string",
+              "description": "An optional credit to the photographer"
+            }
+          },
+          "required": [
+            "url"
+          ]
+        }
+      },
+      "output_length": {
+        "$starlark": "len(input)"
+      },
+      "input_split": {
+        "$starlark": "[[photo] for photo in input]"
+      },
+      "input_merge": {
+        "$starlark": "[photo_array[0] for photo_array in input]"
+      },
+      "input": {
+        "$starlark": "input"
+      },
+      "output": {
+        "$starlark": "output"
+      }
+    },
+    {
+      "type": "placeholder.vector.function",
+      "input_schema": {
+        "type": "array",
+        "description": "An array of cat photos to be ranked",
+        "minItems": 2,
+        "maxItems": 100,
+        "items": {
+          "type": "object",
+          "description": "A cat photo with its URL and optional metadata",
+          "properties": {
+            "url": {
+              "type": "string",
+              "description": "The URL or file path to the cat photo image"
+            },
+            "title": {
+              "type": "string",
+              "description": "An optional title or label for the photo"
+            },
+            "photographer": {
+              "type": "string",
+              "description": "An optional credit to the photographer"
+            }
+          },
+          "required": [
+            "url"
+          ]
+        }
+      },
+      "output_length": {
+        "$starlark": "len(input)"
+      },
+      "input_split": {
+        "$starlark": "[[photo] for photo in input]"
+      },
+      "input_merge": {
+        "$starlark": "[photo_array[0] for photo_array in input]"
+      },
+      "input": {
+        "$starlark": "input"
+      },
+      "output": {
+        "$starlark": "output"
+      }
+    }
+  ],
+  "input_maps": [
+    {
+      "$starlark": "input"
+    }
+  ],
+  "description": "The rank-cat-composition function evaluates and ranks cat photographs by compositional excellence. It assesses artistic intentionality, visual harmony, subject prominence, and contextual support to identify photos with thoughtful, purposeful composition. This enables photographers and curators to recognize exemplary photographic craftsmanship."
+}

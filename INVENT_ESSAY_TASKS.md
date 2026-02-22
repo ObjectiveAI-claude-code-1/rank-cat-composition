@@ -1,0 +1,7 @@
+1. Assess Compositional Deliberation — Evaluate whether the photographer has made intentional, thoughtful choices about framing, angle, and subject positioning. Determine if the placement suggests deliberate artistic decisions (such as consideration of the rule of thirds, leading lines, and perspective choices) or appears accidental. Consider whether the frame boundary has been carefully selected to emphasize what matters and eliminate distraction.
+
+2. Evaluate Visual Balance and Coherence — Examine the overall harmony and unity of the image. Assess whether colors, textures, tones, and spatial elements work together in a balanced, cohesive way. Determine if there is a visual rhythm and logic that guides the viewer's eye, or if elements feel scattered and competing for attention.
+
+3. Determine Subject Prominence and Narrative Clarity — Evaluate how effectively the cat functions as the clear focal point and narrative anchor of the photograph. Assess whether the cat's position and framing naturally draw the eye first, and whether the composition conveys something meaningful about the cat's character, mood, or relationship to its environment.
+
+4. Assess Contextual Supportiveness — Evaluate how well the background, environment, and surrounding elements complement and enhance the cat as the primary subject. Determine whether contextual elements provide meaningful visual or informational support, or whether they distract and compete for visual attention.
