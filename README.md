@@ -67,21 +67,21 @@ Assesses how well the background, environment, and surrounding elements enhance 
 
 This function is composed of four specialized evaluation sub-functions:
 
-- **{{ .Task0 }}**: Scores each photo on compositional deliberation—the intentionality and thoughtfulness of framing choices
+- **score-composition-deliberation**: Scores each photo on compositional deliberation—the intentionality and thoughtfulness of framing choices
   
-  https://github.com/{{ .Owner }}/{{ .Task0 }}
+  https://github.com/ObjectiveAI-claude-code-1/score-composition-deliberation
 
-- **{{ .Task1 }}**: Ranks photos on visual balance and coherence—the harmony of all visual elements working together
+- **rank-cat-visual-harmony**: Ranks photos on visual balance and coherence—the harmony of all visual elements working together
   
-  https://github.com/{{ .Owner }}/{{ .Task1 }}
+  https://github.com/ObjectiveAI-claude-code-1/rank-cat-visual-harmony
 
-- **{{ .Task2 }}**: Ranks photos on subject prominence and narrative clarity—how effectively the cat serves as focal point
+- **evaluate-cat-photos**: Ranks photos on subject prominence and narrative clarity—how effectively the cat serves as focal point
   
-  https://github.com/{{ .Owner }}/{{ .Task2 }}
+  https://github.com/ObjectiveAI-claude-code-1/evaluate-cat-photos
 
-- **{{ .Task3 }}**: Ranks photos on contextual supportiveness—how well background and environment enhance the subject
+- **rank-cat-contextual-support**: Ranks photos on contextual supportiveness—how well background and environment enhance the subject
   
-  https://github.com/{{ .Owner }}/{{ .Task3 }}
+  https://github.com/ObjectiveAI-claude-code-1/rank-cat-contextual-support
 
 Each sub-function specializes in evaluating one dimension of compositional excellence, and their combined insights produce the final ranking.
 
